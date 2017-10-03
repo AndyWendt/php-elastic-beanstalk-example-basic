@@ -18,3 +18,7 @@
 * [Deploy Docker Containers on Elastic Beanstalk](https://cloudacademy.com/blog/how-to-deploy-docker-containers-on-aws-elastic-beanstalk/)
 * [AWS ElasticBeanstalk and Docker](https://blog.kloia.com/aws-elasticbeanstalk-and-docker-a96526177c6d)
 * [Pluralsight, Using Docker with AWS Elastic Beanstalk](https://www.pluralsight.com/courses/docker-aws-elastic-beanstalk)
+* [Elastic Beanstalk Presentation](https://www.slideshare.net/AmazonWebServices/aws-elastic-beanstalk-running-microservices-and-docker)
+* [Elastic Beanstalk Docker Deployment](http://blog.digitopia.com/elastic-beanstalk-docker-deployment/)
+* [Elastic Beanstalk AWS Multicontainer Docker Environments with the AWS Management Console](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker_ecstutorial.html)
+
