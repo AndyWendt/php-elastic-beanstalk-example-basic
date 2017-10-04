@@ -1,6 +1,10 @@
 # PHP on Elastic Beanstalk 
 
 
+Follow the instructions: 
+
+`eb init`
+
 
 
 ## Resources
@@ -22,3 +26,7 @@
 * [Elastic Beanstalk Docker Deployment](http://blog.digitopia.com/elastic-beanstalk-docker-deployment/)
 * [Elastic Beanstalk AWS Multicontainer Docker Environments with the AWS Management Console](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker_ecstutorial.html)
 
+### AWS Resources
+
+* [AWS Preconfigured Docker Containers](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_dockerpreconfig.html)
+* [Docker Run Json V2](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker_v2config.html)
