@@ -4,7 +4,7 @@
     {
       "name": "php-app",
       "host": {
-        "sourcePath": "/var/app/current/src"
+        "sourcePath": "/var/app/current/sites"
       }
     },
     {
