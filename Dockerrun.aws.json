@@ -4,13 +4,13 @@
     {
       "name": "php-app",
       "host": {
-        "sourcePath": "/var/app/current"
+        "sourcePath": "/var/app/current/src"
       }
     },
     {
       "name": "nginx-proxy-conf",
       "host": {
-        "sourcePath": "/var/app/current/proxy/conf.d"
+        "sourcePath": "/var/app/current/nginx"
       }
     }
   ],
@@ -56,7 +56,7 @@
         },
         {
           "sourceVolume": "nginx-proxy-conf",
-          "containerPath": "/etc/nginx/conf.d",
+          "containerPath": "/etc/nginx",
           "readOnly": true
         },
         {

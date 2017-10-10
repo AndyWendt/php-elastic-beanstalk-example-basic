@@ -25,8 +25,15 @@ Follow the instructions:
 * [Elastic Beanstalk Presentation](https://www.slideshare.net/AmazonWebServices/aws-elastic-beanstalk-running-microservices-and-docker)
 * [Elastic Beanstalk Docker Deployment](http://blog.digitopia.com/elastic-beanstalk-docker-deployment/)
 * [Elastic Beanstalk AWS Multicontainer Docker Environments with the AWS Management Console](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker_ecstutorial.html)
+* [EB Run Local](https://aws.amazon.com/blogs/aws/run-docker-apps-locally-using-the-elastic-beanstalk-eb-cli/)
 
 ### AWS Resources
 
 * [AWS Preconfigured Docker Containers](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_dockerpreconfig.html)
 * [Docker Run Json V2](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create_deploy_docker_v2config.html)
+
+
+### SSL 
+
+* [Enabling SSL with Let's Encrypt, NGINX, and Docker](https://reprage.com/post/SSL-with-letsencrypt-nginx-and-docker)
+
