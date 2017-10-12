@@ -10,8 +10,19 @@
   ],
   "containerDefinitions": [
     {
-      "name": "php-app",
+      "name": "site1",
       "image": "commandz/docker-php-test-site1-image",
+      "environment": [
+        {
+          "name": "Container",
+          "value": "PHP"
+        }
+      ],
+      "essential": true
+    },
+    {
+      "name": "site2",
+      "image": "commandz/docker-php-test-site2-image",
       "environment": [
         {
           "name": "Container",
@@ -24,7 +35,6 @@
       "name": "nginx-proxy",
       "image": "nginx",
       "essential": true,
-      "memory": 128,
       "portMappings": [
         {
           "hostPort": 80,
@@ -33,11 +43,15 @@
       ],
       "volumesFrom": [
         {
-          "sourceContainer": "php-app"
+          "sourceContainer": "site1"
+        },
+        {
+          "sourceContainer": "site2"
         }
       ],
       "links": [
-        "php-app"
+        "site1",
+        "site2"
       ],
       "mountPoints": [
         {
