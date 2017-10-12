@@ -12,6 +12,7 @@
     {
       "name": "site1",
       "image": "commandz/docker-php-test-site1-image",
+      "memory": 128,
       "environment": [
         {
           "name": "Container",
@@ -23,6 +24,7 @@
     {
       "name": "site2",
       "image": "commandz/docker-php-test-site2-image",
+      "memory": 128,
       "environment": [
         {
           "name": "Container",
@@ -35,6 +37,7 @@
       "name": "nginx-proxy",
       "image": "nginx",
       "essential": true,
+      "memory": 128,
       "portMappings": [
         {
           "hostPort": 80,
