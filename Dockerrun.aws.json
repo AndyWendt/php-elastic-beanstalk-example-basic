@@ -2,12 +2,6 @@
   "AWSEBDockerrunVersion": 2,
   "volumes": [
     {
-      "name": "php-app",
-      "host": {
-        "sourcePath": "/var/app/current/sites"
-      }
-    },
-    {
       "name": "nginx-proxy-conf",
       "host": {
         "sourcePath": "/var/app/current/nginx"
@@ -17,22 +11,14 @@
   "containerDefinitions": [
     {
       "name": "php-app",
-      "image": "php:7.1-fpm",
+      "image": "commandz/docker-php-test-site1-image",
       "environment": [
         {
           "name": "Container",
           "value": "PHP"
         }
       ],
-      "essential": true,
-      "memory": 128,
-      "mountPoints": [
-        {
-          "sourceVolume": "php-app",
-          "containerPath": "/var/www/html",
-          "readOnly": true
-        }
-      ]
+      "essential": true
     },
     {
       "name": "nginx-proxy",
@@ -45,15 +31,15 @@
           "containerPort": 80
         }
       ],
+      "volumesFrom": [
+        {
+          "sourceContainer": "php-app"
+        }
+      ],
       "links": [
         "php-app"
       ],
       "mountPoints": [
-        {
-          "sourceVolume": "php-app",
-          "containerPath": "/var/www/html",
-          "readOnly": true
-        },
         {
           "sourceVolume": "nginx-proxy-conf",
           "containerPath": "/etc/nginx",
